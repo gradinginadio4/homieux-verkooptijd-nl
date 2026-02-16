@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verkooptijd | Homieux Media</title>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Epilogue', sans-serif; background: #FFFFFF; color: #000887; line-height: 1.6; min-height: 100vh; }
+        .container { max-width: 800px; margin: 0 auto; padding: 60px 20px; }
+        header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 80px; padding-bottom: 20px; border-bottom: 1px solid #E5E5E5; }
+        .logo { font-weight: 700; font-size: 1.5rem; color: #000887; }
+        .calendly-link { color: #ED51C2; text-decoration: none; font-weight: 600; font-size: 0.9rem; }
+        .calendly-link:hover { text-decoration: underline; }
+        h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 40px; line-height: 1.2; }
+        .simple-input { background: #F8F8F8; border-radius: 12px; padding: 40px; margin-bottom: 40px; }
+        .input-label { font-size: 1.1rem; margin-bottom: 20px; font-weight: 400; }
+        .slider-container { margin: 30px 0; }
+        .slider { width: 100%; height: 6px; border-radius: 3px; background: #E5E5E5; outline: none; -webkit-appearance: none; }
+        .slider::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 24px; height: 24px; border-radius: 50%; background: #ED51C2; cursor: pointer; }
+        .slider-value { text-align: center; font-size: 3rem; font-weight: 700; color: #000887; margin: 20px 0; }
+        .insight-result { background: #FFFFFF; border-radius: 8px; padding: 30px; margin-top: 30px; border: 1px solid #E5E5E5; }
+        .result-number { font-size: 2rem; font-weight: 700; color: #000887; margin-bottom: 10px; }
+        .result-label { color: #666; font-size: 1rem; }
+        .context-text { font-size: 1.1rem; color: #555; margin: 40px 0; line-height: 1.7; }
+        .examples-section { margin-top: 60px; }
+        .section-title { font-size: 1.5rem; font-weight: 600; margin-bottom: 30px; }
+        .example-card { background: #F8F8F8; border-radius: 12px; padding: 30px; margin-bottom: 20px; }
+        .example-location { color: #ED51C2; font-weight: 600; font-size: 0.85rem; margin-bottom: 10px; }
+        .example-text { font-size: 1rem; line-height: 1.6; }
+        .cta-section { margin-top: 60px; text-align: center; padding: 40px; background: #F8F8F8; border-radius: 12px; }
+        .cta-text { font-size: 1.25rem; margin-bottom: 25px; }
+        .cta-button { display: inline-block; background: #ED51C2; color: #FFFFFF; padding: 16px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1rem; }
+        .cta-button:hover { background: #D945A8; }
+        footer { margin-top: 80px; padding-top: 40px; border-top: 1px solid #E5E5E5; text-align: center; color: #666; font-size: 0.9rem; }
+        .email-link { color: #000887; text-decoration: none; font-weight: 600; }
+        @media (max-width: 600px) { h1 { font-size: 1.75rem; } .result-number { font-size: 1.5rem; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Homieux Media</div>
+            <a href="https://calendly.com/homieuxmedia/discovery-call-gratuit-discutons-de-vos-defis" class="calendly-link">Afspraak maken</a>
+        </header>
+        
+        <h1>Tijdsbesteding verkoopteam</h1>
+        
+        <div class="simple-input">
+            <p class="input-label">Aantal buitendienstmedewerkers?</p>
+            
+            <div class="slider-container">
+                <input type="range" min="1" max="20" value="5" class="slider" id="repSlider">
+                <div class="slider-value" id="repValue">5</div>
+            </div>
+            
+            <div class="insight-result">
+                <div class="result-number" id="hourResult">~1.100</div>
+                <div class="result-label">uren per jaar per persoon aan ongekwalificeerde prospectie</div>
+            </div>
+        </div>
+        
+        <p class="context-text">
+            Normaal in equipment distributie. Leadvolume varieert. Sommige bedrijven 
+            focussen dit beter.
+        </p>
+        
+        <div class="examples-section">
+            <h2 class="section-title">Hoe teams tijd herwonnen</h2>
+            
+            <div class="example-card">
+                <div class="example-location">Brusselse distributeur, 60 medewerkers</div>
+                <div class="example-text">
+                    Automatische alerts bouwvergunningen horeca. Team contacteert concrete projecten. 
+                    12 uur per week herwonnen per verkoper.
+                </div>
+            </div>
+            
+            <div class="example-card">
+                <div class="example-location">Antwerpse distributeur, 45 medewerkers</div>
+                <div class="example-text">
+                    LinkedIn volgt jobwissels chefs en hotelmanagers. Warme benadering vervangt koude acquisitie.
+                </div>
+            </div>
+            
+            <div class="example-card">
+                <div class="example-location">Gentse distributeur, 80 medewerkers</div>
+                <div class="example-text">
+                    Kwalificatiestap voor eerste meeting. Alleen prospecten met bevestigd budget en tijdlijn. 
+                    Conversie verdubbeld.
+                </div>
+            </div>
+        </div>
+        
+        <div class="cta-section">
+            <p class="cta-text">Herkenbaar patroon? Bespreken we uw situatie?</p>
+            <a href="https://calendly.com/homieuxmedia/discovery-call-gratuit-discutons-de-vos-defis" class="cta-button">Plan gesprek</a>
+        </div>
+        
+        <footer>
+            <p>Vragen? <a href="mailto:info@homieuxmedia.com" class="email-link">info@homieuxmedia.com</a></p>
+            <p style="margin-top: 10px; font-size: 0.8rem;">&copy; 2026 Homieux Media</p>
+        </footer>
+    </div>
+    
+    <script>
+        const slider = document.getElementById('repSlider');
+        const repValue = document.getElementById('repValue');
+        const hourResult = document.getElementById('hourResult');
+        
+        function updateValue() {
+            const reps = parseInt(slider.value);
+            repValue.textContent = reps;
+            const hours = Math.round(reps * 10 * 48);
+            hourResult.textContent = '~' + hours.toLocaleString('nl-NL');
+        }
+        
+        slider.addEventListener('input', updateValue);
+    </script>
+</body>
+</html>
